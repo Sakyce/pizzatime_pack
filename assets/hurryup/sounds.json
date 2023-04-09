@@ -1,0 +1,13 @@
+{
+    "music.hurryup" :{
+        "subtitle" : "It's PiZZA TiME!",
+        "sounds": [
+            {
+                "name": "hurryup:hurryup",
+                "volume": 0.8,
+                "pitch": 1,
+                "weight": 1
+            }
+        ]
+    }
+}
