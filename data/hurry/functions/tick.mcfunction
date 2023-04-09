@@ -1,0 +1,1 @@
+execute as @a[scores={pizzatime_lap=1..}] run title @s actionbar ["⌚ ",{"score":{"name":"@s","objective":"pizzatime_minutes"}},{"text":":"},{"score":{"name":"@s","objective":"pizzatime_seconds"}}]
