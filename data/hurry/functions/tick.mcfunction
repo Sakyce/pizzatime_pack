@@ -1,1 +1,2 @@
 execute as @a[scores={pizzatime_lap=1..}] run title @s actionbar ["⌚ ",{"score":{"name":"@s","objective":"pizzatime_minutes"}},{"text":":"},{"score":{"name":"@s","objective":"pizzatime_seconds"}}]
+execute as @a store result score @s pizzatime_playerid run data get entity @s UUID[0]

@@ -1,2 +1,1 @@
-scoreboard players set @s pizzatime_lap 0
-function hurry:main/newlap
+execute if entity @s[scores={pizzatime_lap=0}] run function hurry:main/start

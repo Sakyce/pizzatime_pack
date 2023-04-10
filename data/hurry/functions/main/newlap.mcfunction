@@ -1,8 +1,14 @@
-scoreboard players set @s pizzatime_minutes 3
-scoreboard players set @s pizzatime_seconds 3
 scoreboard players add @s pizzatime_lap 1
 
+# title
 title @s times 20 60 40
-title @s title ["",{"text":"IT's PiZZA TiME!","bold":true,"color":"yellow"},{"text":" \u0020 \u0020"}]
+execute if entity @s[scores={pizzatime_lap=1..1}] run title @s title ["",{"text":"IT's PiZZA TiME!","bold":true,"color":"yellow"}]
+execute if entity @s[scores={pizzatime_lap=2..}] run title @s title [{"text":"Lap ","bold":true,"color":"blue"},{"score":{"name":"@s","objective":"pizzatime_lap"},"bold":true,"color":"blue"},{"text":"!","bold":true,"color":"blue"}]
 
-playsound hurryup:music.hurryup master @s ~ ~ ~ 1
+#armorstand
+execute at @s as @e if score @s pizzatime_playerid = @p pizzatime_playerid run tp @p @s
+
+# music
+execute if entity @s[scores={pizzatime_lap=1..2}] run stopsound @s master
+execute if entity @s[scores={pizzatime_lap=1}] run playsound hurryup:music.pizzatime master @s ~ ~ ~ 1
+execute if entity @s[scores={pizzatime_lap=2}] run playsound hurryup:music.deservioli master @s ~ ~ ~ 1
