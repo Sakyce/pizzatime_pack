@@ -9,5 +9,27 @@
                 "weight": 1
             }
         ]
+    },
+    "music.pizzatime" :{
+        "subtitle" : "It's PiZZA TiME!",
+        "sounds": [
+            {
+                "name": "hurryup:pizzatime",
+                "volume": 0.8,
+                "pitch": 1,
+                "weight": 1
+            }
+        ]
+    },
+    "music.deservioli" :{
+        "subtitle" : "It's PiZZA TiME!",
+        "sounds": [
+            {
+                "name": "hurryup:deservioli",
+                "volume": 0.8,
+                "pitch": 1,
+                "weight": 1
+            }
+        ]
     }
 }
